@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PooVuelingNmock", "PooVuelingNmock\PooVuelingNmock.csproj", "{9DE3CB02-1B06-4FA0-9B3B-F38B18747BD1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PooVuelingNmock.Integration.Tests", "PooVuelingNmock.Integration.Tests\PooVuelingNmock.Integration.Tests.csproj", "{C1BCD576-8948-4C01-AA8F-70E625FB25A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PooVuelingNmock.Unit.Tests", "PooVuelingNmock.Unit.Tests\PooVuelingNmock.Unit.Tests.csproj", "{BC7BE330-2730-4981-BDBE-B14489002E4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{9DE3CB02-1B06-4FA0-9B3B-F38B18747BD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DE3CB02-1B06-4FA0-9B3B-F38B18747BD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DE3CB02-1B06-4FA0-9B3B-F38B18747BD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1BCD576-8948-4C01-AA8F-70E625FB25A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1BCD576-8948-4C01-AA8F-70E625FB25A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1BCD576-8948-4C01-AA8F-70E625FB25A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1BCD576-8948-4C01-AA8F-70E625FB25A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC7BE330-2730-4981-BDBE-B14489002E4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC7BE330-2730-4981-BDBE-B14489002E4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC7BE330-2730-4981-BDBE-B14489002E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC7BE330-2730-4981-BDBE-B14489002E4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

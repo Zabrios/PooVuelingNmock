@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9DE3CB02-1B06-4FA0-9B3B-F38B18747BD1}</ProjectGuid>
+    <ProjectGuid>{BC7BE330-2730-4981-BDBE-B14489002E4D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PooVuelingNmock</RootNamespace>
-    <AssemblyName>PooVuelingNmock</AssemblyName>
+    <RootNamespace>PooVuelingNmock.Unit.Tests</RootNamespace>
+    <AssemblyName>PooVuelingNmock.Unit.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NMock3, Version=3.5.44.0, Culture=neutral, PublicKeyToken=cf53a760d95f4c33, processorArchitecture=MSIL">
+      <HintPath>..\packages\NMock3.3.5.44\lib\net40\NMock3.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,9 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculadora.cs" />
-    <Compile Include="ICalculadora.cs" />
+    <Compile Include="CalculadoraTests.cs" />
+    <Compile Include="NMock3\NMockTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NMock3\NMock3 Cheat Sheet.pdf" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PooVuelingNmock.Integration.Tests\PooVuelingNmock.Integration.Tests.csproj">
+      <Project>{c1bcd576-8948-4c01-aa8f-70e625fb25a7}</Project>
+      <Name>PooVuelingNmock.Integration.Tests</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PooVuelingNmock\PooVuelingNmock.csproj">
+      <Project>{9de3cb02-1b06-4fa0-9b3b-f38b18747bd1}</Project>
+      <Name>PooVuelingNmock</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
